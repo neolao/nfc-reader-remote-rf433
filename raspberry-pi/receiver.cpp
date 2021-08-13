@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
           switch (value) {
             case 555:
               // start
-              if (state == 0 || state == 4) {
+              if (state != 1) {
                 std::fill( std::begin( message ), std::end( message ), 0 );
                 messagePartIndex = 0;
                 state = 1;
